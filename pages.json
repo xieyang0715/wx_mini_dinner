@@ -1,0 +1,71 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		// {
+		// 	"path": "pages/login/index",
+		// 	"style": {
+		// 		"navigationBarTitleText": "好吃客"
+		// 	}
+		// },
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "好吃客"
+			}
+		}, {
+			"path": "pages/menu/index",
+			"style": {
+				"enablePullDownRefresh":true
+			}
+		}, {
+			"path": "pages/mine/index",
+			"style": {
+			}
+		}, {
+			"path": "pages/order/index",
+			"style": {
+			}
+		}
+    ],
+	"tabBar": {
+		"color": "#757575", //tabBar 字体颜色
+		"selectedColor": "#333333", //tabBar 被选择选择颜色
+		"borderStyle": "white", //tabBar 上边框颜色
+		"backgroundColor": "#ffffff", //tabBar背景颜色
+		/* 最少2个 最多5个 导航项*/
+		"list": [{
+				//注意pagePath 路劲要和上面的包路劲一样
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/home.png",
+				"selectedIconPath": "static/home-filling.png"
+			},
+			{
+				"pagePath": "pages/menu/index",
+				"text": "菜单",
+				"iconPath": "static/feeds.png",
+				"selectedIconPath": "static/feeds-fill.png"
+			},
+			{
+				"pagePath": "pages/order/index",
+				"text": "订单",
+				"iconPath": "static/cart- full.png",
+				"selectedIconPath": "static/cart- full-fill.png"
+			},
+			{
+				"pagePath": "pages/mine/index",
+				"text": "我的",
+				"iconPath": "static/user.png",
+				"selectedIconPath": "static/user-filling.png"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "好吃客",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}

@@ -1,0 +1,1 @@
+<view><u-notice-bar vue-id="8dd740cc-1" text="{{promotionTxt}}" bind:__l="__l"></u-notice-bar><view class="content"><image class="logo" src="/static/meishi.jpg"></image><view class="text-area"><text class="title">{{title}}</text></view><view class="slogan">{{slogan}}</view></view></view>
